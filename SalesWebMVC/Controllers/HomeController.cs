@@ -17,7 +17,12 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            //Dadados enviados no ViewData podem ser resgatados na View
+            string teste = "Testando o envio de dados para a View";
+            
+
+            ViewData["Message"] = teste;
+            ViewData["Dia"] = DateTime.Now.ToString("M/d/yyyy");
 
             return View();
         }

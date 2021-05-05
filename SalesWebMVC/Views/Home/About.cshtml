@@ -1,7 +1,12 @@
 ﻿@{
     ViewData["Title"] = "About";
+    ViewData["teste"] = "Apenas um Teste";
 }
 <h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
+@*Pegando o valor da ViewData com indice Message do Controller Home*@
+<h3>@ViewData["Message"]</h3>
+<h3>Hoje é dia @ViewData["Dia"]</h3>
+
+<p>@ViewData["teste"]</p>
 <p>Use this area to provide additional information.</p>
